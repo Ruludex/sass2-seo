@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: harry;
+  src: url(/asset/typography/HARRYP__.TTF);
+}
+body {
+  background-color: black;
+}
+
+header {
+  background-color: rgba(138, 7, 7, 0.767);
+}
+
+footer {
+  background-color: rgba(138, 7, 7, 0.767);
+}
+
+.navbar-toggler {
+  background-color: yellow;
+}
+
+.palabras {
+  color: yellow;
+  font-family: harry;
+}
+
+.navbar-brand {
+  font-size: 75px;
+}
+
+.nav-link {
+  font-size: 30px;
+}
+
+.articulo {
+  color: red;
+  text-align: center;
+  padding: 100px;
+}
+
+footer img {
+  width: 70px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+footer audio {
+  width: 250px;
+  height: 20px;
+}
+
+main img {
+  border-radius: 300px;
+  padding: 100px;
+}
+
+main iframe {
+  width: 560px;
+  height: 430px;
+  margin: auto;
+  display: block;
+}
+
+/*# sourceMappingURL=estilos.css.map */

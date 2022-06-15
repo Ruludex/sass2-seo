@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: harry;
+    src: url(/asset/typography/HARRYP__.TTF);
+}
+
+@mixin imagenes {
+    border-radius: 300px;
+    padding: 100px;  
+}
+
+@mixin video {
+    width: 560px;
+    height: 430px;
+    margin: auto;
+    display: block;
+}
+
+$palette: (
+    "body": black,
+    "header": rgba(138, 7, 7, 0.767),
+    "footer" : rgba(138, 7, 7, 0.767),
+    ".navbar-toggler": yellow,
+);
+
+$palabras: (
+    ".palabras": yellow,
+);
+
+$size: (
+    ".navbar-brand": 75px,
+    ".nav-link": 30px,
+);
+
+@each $palette, $colores in $palette {
+    #{$palette}{
+        background-color: $colores;
+    }
+}
+
+@each $palabras, $colores in $palabras {
+    #{$palabras}{
+        color:$colores;
+        font-family : harry;
+    }
+}
+
+@each $size, $text in $size {
+    #{$size}{
+        font-size: $text;
+    }
+}
+
+.articulo {
+    color: red;
+    text-align: center;
+    padding: 100px;
+}
+
+footer img {
+    width: 70px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+footer audio {
+    width: 250px;
+    height: 20px;
+}
+
+main img {
+    @include imagenes;
+}
+
+main iframe {
+    @include video;
+}
